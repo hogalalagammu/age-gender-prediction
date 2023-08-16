@@ -43,7 +43,7 @@ genderNet = cv2.dnn.readNet(genderModel, genderProto)
 faceNet = cv2.dnn.readNet(faceModel, faceProto)
 
 # Open a video file or an image file or a camera stream
-video = cv2.VideoCapture('4.mp4')
+video = cv2.VideoCapture(0)
 
 while True:
     ret, frame = video.read()
